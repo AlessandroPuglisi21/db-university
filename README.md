@@ -21,3 +21,11 @@ SELECT *
 FROM db_university.students
 WHERE `date_of_birth` < '1996-12-18'
 ```
+
+### Selezionare tutti i corsi del primo semestre del primo anno di un qualsiasi corso di laurea (286)
+
+```SQL
+SELECT * 
+FROM db_university.courses
+WHERE `period` = 'I semestre' AND `year` = '1'
+```
