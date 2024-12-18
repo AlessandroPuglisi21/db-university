@@ -19,7 +19,7 @@ WHERE `cfu`>= '10'
 ```SQL
 SELECT * 
 FROM db_university.students
-WHERE `date_of_birth` < '1996-12-18'
+WHERE `date_of_birth` < DATE_SUB(CURDATE(), INTERVAL 30 YEAR);
 ```
 
 ### Selezionare tutti i corsi del primo semestre del primo anno di un qualsiasi corso di laurea (286)
