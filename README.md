@@ -44,3 +44,11 @@ WHERE `date` = '2020-06-20' AND `hour`>= '14:00:00'
 SELECT COUNT(id) 
 FROM `departments`
 ```
+
+### Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
+
+```SQL
+SELECT COUNT(id)
+FROM `teachers`
+WHERE `phone` IS NULL
+``` 
