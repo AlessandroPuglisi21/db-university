@@ -37,3 +37,10 @@ SELECT *
 FROM db_university.exams
 WHERE `date` = '2020-06-20' AND `hour`>= '14:00:00'
 ```
+
+### Da quanti dipartimenti è composta l'università? (12)
+
+```SQL
+SELECT COUNT(id) 
+FROM `departments`
+```
