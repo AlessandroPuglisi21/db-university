@@ -59,3 +59,11 @@ WHERE `phone` IS NULL
 INSERT INTO students (degree_id, name, surname, date_of_birth, fiscal_code, enrolment_date, registration_number, email)
 VALUES ('61', 'Alessandro', 'Puglisi', '2000-05-04', 'PGLSSNANOMD', '2021-05-04', '5551223', 'alessandropuglisi2000@gmail.com');
 ```
+
+### Cambiare il numero dell’ufficio del professor Pietro Rizzo in 126
+
+```SQL
+UPDATE teachers
+SET office_number = '126'
+WHERE `id` = '58'
+```
