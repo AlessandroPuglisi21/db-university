@@ -52,3 +52,10 @@ SELECT COUNT(id)
 FROM `teachers`
 WHERE `phone` IS NULL
 ``` 
+
+### Inserire nella tabella degli studenti un nuovo record con i propri dati (per il campo degree_id, inserire un valore casuale)
+
+```SQL
+INSERT INTO students (degree_id, name, surname, date_of_birth, fiscal_code, enrolment_date, registration_number, email)
+VALUES ('61', 'Alessandro', 'Puglisi', '2000-05-04', 'PGLSSNANOMD', '2021-05-04', '5551223', 'alessandropuglisi2000@gmail.com');
+```
