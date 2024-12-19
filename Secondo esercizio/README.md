@@ -20,3 +20,11 @@ SELECT AVG(vote),exam_id
 FROM db_university.exam_student
 GROUP BY  exam_id
 ```
+
+### Contare quanti corsi di laurea ci sono per ogni dipartimento
+
+```SQL
+SELECT course_id, COUNT(id) AS total_exams
+FROM db_university.exams
+GROUP BY course_id;
+```
