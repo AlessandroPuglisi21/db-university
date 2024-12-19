@@ -13,3 +13,10 @@ SELECT COUNT(id), office_address
 FROM db_university.teachers
 GROUP BY office_address
 ```
+### Calcolare la media dei voti di ogni appello d'esame
+
+```SQL
+SELECT AVG(vote),exam_id
+FROM db_university.exam_student
+GROUP BY  exam_id
+```
